@@ -3,78 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Lựa Chọn</title>
+    <title>Trang Web 4 Phần</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            scroll-behavior: smooth;
-        }
-        .nav {
-            background: #333;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-        }
-        .nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .container {
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             gap: 20px;
-            padding: 80px 20px 20px;
+            width: 80%;
+            max-width: 1200px;
         }
         .section {
-            width: 250px;
             background: white;
-            padding: 15px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 50px;
+            text-align: center;
         }
         .section img {
-            width: 100%;
+            max-width: 100%;
             border-radius: 10px;
         }
-        .description {
+        .section p {
             margin-top: 10px;
-            font-size: 14px;
-            color: #333;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <a href="#section1">Phần 1</a>
-        <a href="#section2">Phần 2</a>
-        <a href="#section3">Phần 3</a>
-        <a href="#section4">Phần 4</a>
-    </div>
-    <h1>Chọn Một Phần</h1>
     <div class="container">
-        <div class="section" id="section1">
-            <img src="https://via.placeholder.com/250" alt="Hình ảnh 1">
-            <p class="description">Mô tả phần 1</p>
+        <div class="section">
+            <img src="https://via.placeholder.com/300" alt="Hình ảnh 1">
+            <p>Mô tả cho phần 1</p>
         </div>
-        <div class="section" id="section2">
-            <img src="https://via.placeholder.com/250" alt="Hình ảnh 2">
-            <p class="description">Mô tả phần 2</p>
+        <div class="section">
+            <img src="https://via.placeholder.com/300" alt="Hình ảnh 2">
+            <p>Mô tả cho phần 2</p>
         </div>
-        <div class="section" id="section3">
-            <img src="https://via.placeholder.com/250" alt="Hình ảnh 3">
-            <p class="description">Mô tả phần 3</p>
+        <div class="section">
+            <img src="https://via.placeholder.com/300" alt="Hình ảnh 3">
+            <p>Mô tả cho phần 3</p>
         </div>
-        <div class="section" id="section4">
-            <img src="https://via.placeholder.com/250" alt="Hình ảnh 4">
-            <p class="description">Mô tả phần 4</p>
+        <div class="section">
+            <img src="https://via.placeholder.com/300" alt="Hình ảnh 4">
+            <p>Mô tả cho phần 4</p>
         </div>
     </div>
 </body>
